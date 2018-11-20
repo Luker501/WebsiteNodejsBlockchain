@@ -1,0 +1,15 @@
+{
+  "Address": "E5453CBACD29F0EE7F81255ED5FDA64ED9D41E6F",
+  "PublicKey": {
+    "CurveType": "ed25519",
+    "PublicKey": "4F21A83B0E46B3A43114238D8D006F6C540AD85B84E09D3D4AE2EF820B7826D1"
+  },
+  "Amount": 99999999999999,
+  "Name": "Full_0",
+  "Permissions": {
+    "Base": {
+      "Perms": 16383,
+      "SetBit": 16383
+    }
+  }
+}
