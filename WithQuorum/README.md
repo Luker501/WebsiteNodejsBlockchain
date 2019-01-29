@@ -4,7 +4,7 @@ Firstly, you will need to be familiar with the Quorum 7 node example [here](http
 
 You will need to startup the Quorum blockchain and deploy the SimpleStorage.sol contract.
 
-Find the address of the deployed contract and add it to:
+Find the address of the deployed contract and add it to the following part of the server.js code:
 
 ```javascript
 var contractAddress = '0x1349f3e1b8d71effb47b840594ff27da7e603d17';
