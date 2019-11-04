@@ -11,9 +11,9 @@ var lightwallet = require('eth-lightwallet');
 var txutils = lightwallet.txutils;
 
 //Put your Ethereum account address here:
-var address = '0x659C82A283b41a4B429a68b02e372F7333438ef6';
+var address = '...';
 //Put your Ethereum account private key here:
-var key = '66BECC08F70B0238FD9BBFDEA0FEFF307F6F6F3DEF58B3F7505CFD70ED393E6A'; //NOTE IF YOU SHARE THIS CODE WITH ANYONE YOUR ACCOUNT IS VUNERABLE - PLEASE ONLY USE A TEST ACCOUNT
+var key = '...'; //NOTE IF YOU SHARE THIS CODE WITH ANYONE YOUR ACCOUNT IS VUNERABLE - PLEASE ONLY USE A TEST ACCOUNT
 //The Ethereum contract address to interact with (deployed on the Ropsten testnet):
 var contractAddress = '0x3aD4D07942d924a247b6e1c09cfE0a0D0e18AB27';
 
