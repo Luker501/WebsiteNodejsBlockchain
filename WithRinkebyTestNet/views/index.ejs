@@ -18,12 +18,14 @@
         <form action="/getVote" method="get">
           <input type="submit" class="ghost-button" value="Get Vote">
         </form>
+      </fieldset>
+      <fieldset>
         <% if(voteIs !== null){ %>
           <p><%= voteIs %></p>
         <% } %>
 
-        <% if(voteIs !== null){ %>
-          <p><%= error %></p>
+        <% if(info !== null){ %>
+          <p><%= info %></p>
         <% } %>
       </fieldset>
     </div>
