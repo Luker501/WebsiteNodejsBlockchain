@@ -49,6 +49,6 @@ Lastly we can trigger a smart contract setter function by entering a vote number
 
 # Credits
 
-The activity is based on:
+This activity builds on:
 
 https://medium.com/@codetractio/try-out-ethereum-using-only-nodejs-and-npm-eabaaaf97c80
