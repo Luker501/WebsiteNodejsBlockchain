@@ -14,8 +14,8 @@ var txutils = lightwallet.txutils;
 var address = '...';
 //Put your Ethereum account private key here:
 var key = '...'; //NOTE IF YOU SHARE THIS CODE WITH ANYONE YOUR ACCOUNT IS VUNERABLE - PLEASE ONLY USE A TEST ACCOUNT
-//The Ethereum contract address to interact with (deployed on the Ropsten testnet):
-var contractAddress = '0x3aD4D07942d924a247b6e1c09cfE0a0D0e18AB27';
+//The Ethereum contract address to interact with (deployed on the Rinkeby testnet):
+var contractAddress = '...';
 
 //The Solidity contract interface
 var interface = [{"constant":false,"inputs":[{"name":"to","type":"address"}],"name":"delegate","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"winningProposal","outputs":[{"name":"_winningProposal","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"toVoter","type":"address"}],"name":"giveRightToVote","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"toProposal","type":"uint8"}],"name":"vote","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"inputs":[{"name":"_numProposals","type":"uint8"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"}];
@@ -47,7 +47,7 @@ app.get('/getVote', function (req, res) {
 	//now lets nominate our provider for the blockchain interaction functionality:	
 	const web3 = new Web3(
 		//we will use the infura servers connected to the Ropsten Ethereum testnet
-    		new Web3.providers.HttpProvider('https://ropsten.infura.io/')
+    		new Web3.providers.HttpProvider('https://rinkeby.infura.io/')
 	);
 
 	//now lets load the interface of the smart contract	
@@ -82,7 +82,7 @@ app.post('/', function (req, res) {
 		//again we nominate our provider for the blockchain interaction functionality:
 		var web3 = new Web3(
 			//again we will use the infura servers connected to the Ropsten Ethereum testnet
-  			new Web3.providers.HttpProvider('https://ropsten.infura.io/')
+  			new Web3.providers.HttpProvider('https://rinkeby.infura.io/')
 		);	
 		//now we build the Ethereum transaction options:
 		var txOptions = {
