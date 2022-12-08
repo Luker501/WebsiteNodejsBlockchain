@@ -11,6 +11,6 @@
   "dependencies": {
     "@monax/burrow": "^0.20.4",
     "body-parser": "^1.18.3",
-    "express": "^4.16.3"
+    "express": "^4.17.3"
   }
 }
